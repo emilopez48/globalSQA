@@ -2,7 +2,6 @@
 
 Este es un proyecto de automatización de pruebas utilizando Cypress. El objetivo es proporcionar un conjunto de pruebas automatizadas para la aplicación bancaria de ejemplo del Banco XYZ, asegurando su correcta funcionalidad y rendimiento.
 
-![Cypress Logo](https://www.cypress.io/images/layouts/cypress-logo-dark.svg)
 
 ## 📋 Tabla de Contenidos
 
@@ -57,7 +56,10 @@ globalSQA/
 │
 ├── cypress/
 │   ├── fixtures/DOM/localizadores        # Datos de prueba estáticos
-│   ├── e2e/testingGlobalsqa.cy           # Archivos de prueba
+│   ├── e2e/
+│        ├──  account.cy                  # Archivos de prueba referidos a cuentas
+│        ├──  login.cy                    # Archivos de prueba referidos a inicio de sesion
+│        └──  transaccions.cy             # Archivos de prueba referidos a transacciones de deposito y extraccón             
 │   └── support/                          # Comandos y configuración de Cypress
 │       ├── commands.js                   # Comandos customizados
 │       └── e2e.js                        # Archivo de configuración principal
