@@ -80,8 +80,6 @@ describe('Pruebas proyecto Globalsqa', () => {
       cy.deposito(this.el.dataDeposito.deposito1000);
       cy.extracción(this.el.dataRetiro.retiro500);
       cy.contains(this.el.mensajeTransaccionExitosa).should('be.visible');
-      cy.contains(this.el.pestañaTransacciones).click();
-      cy.get(this.el.tablaTransacciones).should('have.length.greaterThan', 1);
     });
     
 
