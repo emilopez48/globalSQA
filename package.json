@@ -1,0 +1,20 @@
+{
+  "name": "globalsqa",
+  "version": "1.0.0",
+  "description": "Testing sobre Globalsqa",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "Testing",
+    "Globalsqa",
+    "Cypress"
+  ],
+  "author": "Emiliano Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0"
+  }
+}
