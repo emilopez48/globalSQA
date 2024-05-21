@@ -46,8 +46,8 @@ Para ejecutar Cypress en modo interactivo, donde puedes ver las pruebas en acci�
 npm run cypress:open
 
 Ejecución en Modo Headless
-Para ejecutar las pruebas en modo headless, ideal para integración continua (CI), usa:
-npm run cypress:run
+Para ejecutar las pruebas en modo headless usa:
+npx cypress run
 
 📂 Estructura del Proyecto
 La estructura del proyecto es la siguiente:
