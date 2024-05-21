@@ -1,62 +1,63 @@
-# Cypress QA Automation Project Banco XYZ
+markdown
+Copiar código
+# Cypress QA Automation Projecto Banco XYZ
 
-Este es un proyecto de automatización de pruebas utilizando Cypress. El objetivo de este proyecto es proporcionar un conjunto de pruebas automatizadas para la aplicación de ejemplo del Banco XYZ, asegurando su correcta funcionalidad y rendimiento.
+Este es un proyecto de automatización de pruebas utilizando Cypress. El objetivo es proporcionar un conjunto de pruebas automatizadas para la aplicación bancaria de ejemplo del Banco XYZ, asegurando su correcta funcionalidad y rendimiento.
 
-## Tabla de Contenidos
+![Cypress Logo](https://www.cypress.io/images/layouts/cypress-logo-dark.svg)
+
+## 📋 Tabla de Contenidos
 
 - [Introducción](#introducción)
 - [Requisitos Previos](#requisitos-previos)
 - [Instalación](#instalación)
 - [Ejecución de Pruebas](#ejecución-de-pruebas)
+  - [Modo Interactivo](#ejecución-en-modo-interactivo)
+  - [Modo Headless](#ejecución-en-modo-headless)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Escribiendo Pruebas](#escribiendo-pruebas)
 - [Comandos Customizados](#comandos-customizados)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
 
-## Introducción
+## 🌟 Introducción
 
 Este proyecto utiliza Cypress para automatizar pruebas end-to-end de la aplicación bancaria. Cypress es una herramienta poderosa para realizar pruebas rápidas y fiables en cualquier aplicación web.
 
-## Requisitos Previos
+## 📋 Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 - [Node.js](https://nodejs.org/) (versión 12 o superior)
 - [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
 
-## Instalación
+## 🛠 Instalación
 
 Sigue estos pasos para configurar el proyecto localmente:
 
-1. Clona este repositorio:
-    
-    git clone https://github.com/emilopez48/globalSQA.git
-    
+```bash
+# Clona este repositorio
+git clone https://github.com/tuusuario/cypress-qa-automation.git
 
-2. Navega al directorio del proyecto:
-   
-    cd cypress-qa-automation
-    
+# Navega al directorio del proyecto
+cd cypress-qa-automation
 
-3. Instala las dependencias del proyecto:
-    
-    npm install
-    
-
-## Ejecución de Pruebas
-
-### Ejecución en modo interactivo
-
+# Instala las dependencias del proyecto
+npm install
+🚀 Ejecución de Pruebas
+Ejecución en Modo Interactivo
 Para ejecutar Cypress en modo interactivo, donde puedes ver las pruebas en acción, usa el siguiente comando:
 
-```bash
+bash
+Copiar código
 npm run cypress:open
-Ejecución en modo headless
+Ejecución en Modo Headless
 Para ejecutar las pruebas en modo headless, ideal para integración continua (CI), usa:
 
 bash
 Copiar código
 npm run cypress:run
-Estructura del Proyecto
+📂 Estructura del Proyecto
 La estructura del proyecto es la siguiente:
 
 bash
@@ -64,21 +65,21 @@ Copiar código
 cypress-qa-automation/
 │
 ├── cypress/
-│   ├── e2e/testingGlobalsqa.cy          # Pruebas de la aplicacion
-│   ├── fixtures/DOM/localizadores       # set de localizadores y datos de pruebas
-│   │                                    
-│   │                             
-│   ├── downloads                        # Carpeta de descargas
-│   └── support/                         # Comandos y configuración de Cypress
-│       ├── commands.js                  # Comandos customizados
-│       └── e2e                          # Archivo de configuración principal
+│   ├── fixtures/           # Datos de prueba estáticos
+│   ├── integration/        # Archivos de prueba
+│   │   ├── examples/       # Ejemplos de pruebas
+│   │   └── tests/          # Pruebas específicas de la aplicación
+│   ├── plugins/            # Plugins para Cypress
+│   └── support/            # Comandos y configuración de Cypress
+│       ├── commands.js     # Comandos customizados
+│       └── index.js        # Archivo de configuración principal
 │
 ├── node_modules/           # Dependencias de Node.js
 ├── .gitignore              # Archivos y directorios ignorados por git
 ├── cypress.json            # Configuración de Cypress
 ├── package.json            # Dependencias y scripts de npm
 └── README.md               # Documentación del proyecto
-Escribiendo Pruebas
+📝 Escribiendo Pruebas
 Para escribir una nueva prueba, crea un archivo en el directorio cypress/integration/tests/ con el siguiente contenido de ejemplo:
 
 javascript
@@ -89,7 +90,7 @@ describe('Ejemplo de prueba', () => {
     cy.contains('Example Domain').should('be.visible');
   });
 });
-Comandos Customizados
+🛠 Comandos Customizados
 Puedes definir comandos customizados en cypress/support/commands.js. Por ejemplo:
 
 javascript
