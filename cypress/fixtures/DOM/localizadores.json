@@ -1,0 +1,93 @@
+{
+    "botonLoginCliente":"Customer Login" ,
+    "botonLoginBancario":"Bank Manager Login",
+    "selectorCliente":"select",
+    "botonLogin":"button[type='submit']",
+    "mensajeBienvenida": "Welcome",
+    "botonLogout":"Logout",
+    "pestañaTransacciones":"Transactions",
+    "pestañaDeposito":"Deposit",
+    "pestañaRetiro":"Withdrawl",
+    "botonAgregarCliente":"Add Customer",
+    "botonAbrirCuenta":"Open Account",
+    "botonVerClientes":"Customers",
+    "campoAñadirClienteNombre":"input[ng-model='fName']",
+    "campoAñadirClienteApellido":"input[ng-model='lName']",
+    "campoAñadirClienteCodigoPostal":"input[ng-model='postCd']",
+    "botonAñadirCliente":"button[type='submit']",
+    "selectorAbrirCuentaCliente":"select[ng-model='custId']",
+    "selectorAbrirCuentaMoneda":"select[ng-model='currency']",
+    "botonAbrirCuentaProcesar":"button[type='submit']",
+    "tablaClientes":".table.table-bordered.table-striped",
+    "botonEliminarCliente":"button[ng-click='deleteCust(cust)']",
+    "tablaTransacciones":".table tbody tr",
+    "botonResetear":"Reset",
+    "botonVolver":"Back",
+    "mensajeTransaccionExitosa": "Transaction successful",
+    "mensajeTransaccionFallida": "Transaction Failed. You can not withdraw amount more than the balance.",
+    "mensajeDepositoExitoso": "Deposit Successful",
+    "labelBalance": "Balance :",
+    "campoDepositoCantidad":"input[ng-model='amount']",
+    "botonConfirmarDeposito":"button[type='submit']",
+    "labelCantidadRetiro":"Amount to be Withdrawn :",
+    "contenedorCantidadCampoRetiro":"input[ng-model='amount']",
+    "botonConfirmarExtraccion":"button[type='submit']",
+    "botonHome":"Home",
+    "selectorCuenta":"select[ng-model='accountNo']",
+    "labelInfoCuenta":"strong[class='ng-binding']",
+    "formularioYourName":"[name='myForm']",
+    "labelYourName":"Your Name",
+    "accionAtras":"back",
+    "elementoNoCuenta":"[ng-show='noAccount']",
+    "botonProcess":"Process",
+    "mensajeConfirmacionDepositoExitoso":"[ng-show='message']",
+    "mensajeAdvertenciaSeleccionCliente":"Selecciona un elemento de la lista",
+    "mensajeErrorAgregandoCiente":"Please check the details. Customer may be duplicate.",
+    "mensajeClienteAgregadoExitosamente":"successfully",
+    
+    "dataClientes":{
+        "clienteHarry":"Harry Potter",
+        "clienteHermoine":"Hermoine Granger",
+        "clienteNeville":"Neville Longbottom",
+        "clienteAlbus":"Albus Dumbledore",
+        "clienteRon":"Ron Weasly",
+        "clienteHermoineNombre":"Hermoine",
+        "clienteHarryNombre":"Harry"
+        },
+    
+    "dataNuevoCliente":{
+        "nombreCliente":"Emiliano",
+        "apellidoCliente":"Lopez",
+        "codigoPostalCliente":"5001",
+        "nombreCompletoCliente":"Emiliano Lopez",
+        "nombreClienteVacio":" ",
+        "apellidoClienteVacio":" ",
+        "codigoPostalClienteVacio":" "
+
+        },
+        
+    "dataMoneda":{
+            "monedaDollar":"Dollar",
+            "monedaPound":"Pound",
+            "monedaRupee":"Rupee"
+        },
+
+    "dataDeposito":{
+        "deposito1000":"1000",
+        "deposito10000":"10000",
+        "depositoNegativo":"-1000"
+        },
+        
+    "dataRetiro":{
+        "retiro500":"1000",
+        "retiro1000":"1000",
+        "retiroFueraDeRango":"999999999"
+         },
+    "dataCuentas":{
+        "cuenta1001":"1001",
+        "cuenta1002":"1002"
+    }
+    
+        
+    
+}
