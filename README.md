@@ -23,7 +23,7 @@ Este proyecto utiliza Cypress para automatizar pruebas end-to-end de la aplicaci
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-- [Node.js](https://nodejs.org/) (versión 12 o superior)
+- [Node.js](https://nodejs.org/) 
 - [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
 
 ## 🛠 Instalación
